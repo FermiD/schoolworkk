@@ -4,7 +4,6 @@ Created on Tue Nov 12 08:31:54 2019
 
 @author: aqsha
 """
-import random
 
 possibleq = ["Afghanistan",
 "Albania",
@@ -402,4 +401,3 @@ possiblea = ["Kabul",
 "Lusaka",
 "Harare",
 ]
-the_ans_itself = possiblea[0]
