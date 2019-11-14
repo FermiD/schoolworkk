@@ -14,6 +14,7 @@ import random
 
 #Below is to shuffle two lists at once within the same order as each other.
 #That is to avoid achieving the non-corresponding capital as the answer.
+#After the shuffle, both the lists are read here as tuples.
 comb = list(zip(possibleq, possiblea))
 shuffled = random.shuffle(comb)
 possibleq, possiblea= zip(*comb)
@@ -43,7 +44,7 @@ class QuizApp(Tk):
         frame.tkraise()
 
 #Classes Quiz2 to 7 are pretty much copies. Except in 7, button leads to the finish.
-#Text are formatted to suit the small window, for now.        
+#Text are formatted to suit the small window, for now. The window is stretchable.        
 class Quiz1(Frame):
     def __init__(self, master, controller):
         Frame.__init__(self, master)
